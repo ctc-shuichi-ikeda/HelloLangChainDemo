@@ -4,9 +4,6 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
 
-#import os
-#os.environ['OPENAI_API_KEY']="sk-XXXXXXXXXXXXXXXXXXX"
-
 from langchain.document_loaders import TextLoader
 loader = TextLoader("data/Sample.txt")
 documents = loader.load()
