@@ -2,6 +2,9 @@ langchain
 openai
 chromadb
 tiktoken
+pypdf
+unstructured
+
 
 
 

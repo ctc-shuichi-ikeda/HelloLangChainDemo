@@ -4,12 +4,13 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
 from langchain.document_loaders import PyPDFLoader
-import os
-os.environ['OPENAI_API_KEY']="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+#import os
+#os.environ['OPENAI_API_KEY']="sk-XXXXXXXXXXXXXXXXXXX"
 
 from langchain.document_loaders import TextLoader
 
-loader = PyPDFLoader("data/sample.pdf")
+loader = PyPDFLoader("data/Sample.pdf")
 pages = loader.load_and_split()
 
 # text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)

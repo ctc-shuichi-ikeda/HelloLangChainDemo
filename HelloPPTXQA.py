@@ -6,12 +6,12 @@ from langchain.chains import RetrievalQA
 from langchain.document_loaders import PyPDFLoader
 from langchain.document_loaders import UnstructuredPowerPointLoader
 
-import os
-os.environ['OPENAI_API_KEY']="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+#import os
+#os.environ['OPENAI_API_KEY']="sk-XXXXXXXXXXXXXXXXXXX"
 
 from langchain.document_loaders import TextLoader
 
-loader = UnstructuredPowerPointLoader("data/sample.pptx")
+loader = UnstructuredPowerPointLoader("data/Sample.pptx")
 pages = loader.load_and_split()
 
 embeddings = OpenAIEmbeddings()
