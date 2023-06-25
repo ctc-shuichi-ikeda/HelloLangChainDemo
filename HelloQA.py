@@ -4,7 +4,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
 import os
-os.environ['OPENAI_API_KEY']="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"
+os.environ['OPENAI_API_KEY']="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 from langchain.document_loaders import TextLoader
 loader = TextLoader("data/Message.txt")
