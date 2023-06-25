@@ -3,7 +3,7 @@ openai
 chromadb
 tiktoken
 pypdf
-unstructured
+#unstructured   # 2023/6/25 PPTXのためのunstructuredは、requirement.txtではN.G. 代わりにpip3 install unstructuredを実行
 
 
 

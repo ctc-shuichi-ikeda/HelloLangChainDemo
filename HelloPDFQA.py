@@ -21,6 +21,6 @@ docsearch = Chroma.from_documents(pages, embeddings)
 
 qa = RetrievalQA.from_chain_type(llm=OpenAI(), chain_type="stuff", retriever=docsearch.as_retriever(search_kwargs={"k": 1}))
 
-query = "日付はいつですか？"
+query = "CTCってどんな会社？"
 result = qa.run(query)
 print(result)
