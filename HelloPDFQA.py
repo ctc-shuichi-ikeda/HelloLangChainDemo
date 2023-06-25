@@ -5,7 +5,7 @@ from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
 from langchain.document_loaders import PyPDFLoader
 import os
-os.environ['OPENAI_API_KEY']="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"
+os.environ['OPENAI_API_KEY']="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 from langchain.document_loaders import TextLoader
 
