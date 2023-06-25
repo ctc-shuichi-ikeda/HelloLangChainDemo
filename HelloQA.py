@@ -4,10 +4,10 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
 import os
-os.environ['OPENAI_API_KEY']="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+os.environ['OPENAI_API_KEY']="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"
 
 from langchain.document_loaders import TextLoader
-loader = TextLoader("data/Message.txt")
+loader = TextLoader("data/Sample.txt")
 documents = loader.load()
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 texts = text_splitter.split_documents(documents)
@@ -17,6 +17,6 @@ docsearch = Chroma.from_documents(texts, embeddings)
 
 qa = RetrievalQA.from_chain_type(llm=OpenAI(), chain_type="stuff", retriever=docsearch.as_retriever(search_kwargs={"k": 1}))
 
-query = "あなたの趣味は何ですか？"
+query = "CTCってどんな会社？"
 result = qa.run(query)
 print(result)
